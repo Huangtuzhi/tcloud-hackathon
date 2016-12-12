@@ -1,4 +1,4 @@
-# tcloud-hackathon-GoHome
+# tcloud-hackathon-Home
 
 腾讯云马拉松参赛项目——回家，帮助走失儿童亲属和爱心人士寻找走失儿童。
 
