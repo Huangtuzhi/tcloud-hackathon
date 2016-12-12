@@ -1,0 +1,12 @@
+<!--posts.wxml-->
+<view class="container post-list">
+  <block wx:for="{{posts}}" wx:for-item="post">
+  <view class="image-section">
+   <image style="width: 100px; height: 100px; background-color: #eeeeee;" mode="aspectFit" src="{{post['photoUrl']}}"></image>
+   </view>
+   <text class="post-item">年龄 {{post["age"]}} 遗失时间{{post["misTime"]}}</text>
+  </block>
+  <button type="primary" bindtap="bindMapTap" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">查看实时位置
+  </button>
+</view>
+

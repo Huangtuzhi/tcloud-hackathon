@@ -1,0 +1,9 @@
+<map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" covers="{{covers}}" style="width: 390px; height: 300px;"></map>
+<view class="container post-list">
+  <view class="image-section">
+   <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="aspectFit" src="{{url}}"></image>
+  </view>
+</view>
+
+<button type="primary" bindtap="onLoad" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">刷新
+</button>

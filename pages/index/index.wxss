@@ -1,0 +1,39 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 10rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.photo-field {
+  margin: 25rpx;
+}
+
+.post-field {
+  margin: 25rpx;
+}
+
+.my-post-field {
+  margin: 25rpx;
+}
+
+.data-field {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+
+.child-item {
+  margin: 35rpx;
+  font-size: 15px;
+}

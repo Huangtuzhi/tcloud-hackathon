@@ -1,0 +1,9 @@
+.post-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.post-item {
+  margin: 25rpx;
+  font-size: 19px;
+}

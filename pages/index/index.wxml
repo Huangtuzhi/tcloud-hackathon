@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="photo-field">
+  <button type="primary" bindtap="chooseImage" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">立即救助
+  </button>
+  </view>
+
+  <view class="post-field">
+  <button type="primary" bindtap="chooseFindPeopleImage" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">寻人发布
+  </button>
+  </view>
+
+  <view class="my-post-field">
+  <button type="primary" bindtap="bindPostTap" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">我的发布
+  </button>
+  </view>
+
+  <view class="data-field container">
+  走失儿童列表
+  <block wx:for="{{missChild}}" wx:for-item="child">
+  <view class="image-section">
+  <image style="width: 140px; height: 140px; background-color: #eeeeee;" mode="aspectFit" src="{{child['photoUrl']}}"></image>
+  </view>
+  <text class="child-item">时间 {{child["misTime"]}} 年龄 {{child["age"]}}</text>
+  </block>
+  </view>
+</view>
+
+
